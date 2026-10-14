@@ -4,6 +4,14 @@
 
 ## 安装与配置
 
+在云崽根目录下打开终端，运行：
+
+* 使用 Github
+
+``` bash
+git clone --depth=1 https://github.com/Kwisma/Hypixel-Plugin.git ./plugins/Hypixel-Plugin/
+```
+
 1. 将 `hypixel-plugin` 放入 Yunzai 的 `plugins` 目录。
 2. 在 [Hypixel Developer Dashboard](https://developer.hypixel.net/) 创建并获取 API Key。
 3. 将 API Key 填入插件目录下的 `config.yaml`：
