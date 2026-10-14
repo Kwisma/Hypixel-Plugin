@@ -6,8 +6,6 @@
 
 在云崽根目录下打开终端，运行：
 
-* 使用 Github
-
 ``` bash
 git clone --depth=1 https://github.com/Kwisma/Hypixel-Plugin.git ./plugins/Hypixel-Plugin/
 ```
