@@ -52,4 +52,4 @@
 
 ## 数据来源
 
-玩家名称会先通过 Minecraft Services 查询 UUID，再使用配置的 API Key 请求 Hypixel Player API。每次命令都会实时请求 API；若请求受限、超时或 API Key 无效，机器人会返回相应错误提示。
+玩家名称会先通过 Minecraft Services 查询 UUID，再使用配置的 API Key 请求 Hypixel Player API。每次命令都会实时请求 API，并将成功的数据缓存到插件的 `cache` 目录。若该目录不存在会自动创建；Hypixel API 查询失败时会尝试读取该玩家的缓存数据。首次运行且缺少 `config.yaml` 时会自动创建空 API Key 配置文件，填写 API Key 后即可使用。若请求失败且没有可用缓存，机器人会返回相应错误提示。
